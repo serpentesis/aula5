@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --fonte-p: 'Poppins', sans-serif;
+    /*--fonte-sec: 'Kalam', cursive; */
+    --shadow: rgba(0,0,0,0.1);
+}
+body{
+    background: rgba(104, 89, 102, 0.237);
+    font-family: var(--fonte-p);
+    
+}
+
+h1{
+    text-align: center;
+    text-shadow: #0000006e 2px 2px;
+}
+
+#d1{
+    background: #f5bacf;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: auto;
+    border-radius: 12px;   
+    box-shadow: 5px 5px 2px var(--shadow);
+    border: 2px dotted #a14666;
+    
+}
+
+#d1:hover{
+    transform: rotate(20deg);
+    border: #a14666 solid 2px;
+    color: aliceblue;
+}
+
+#d2{
+    background: #a14666;
+    color: aliceblue;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: auto;
+    border-radius: 12px;   
+    box-shadow: 5px 5px 2px var(--shadow);
+    border: 2px solid #cb8fac;
+}
+
+#d2:hover{
+    transform: rotate(20deg);
+    border: #f5bacf solid 2px;
+    color: #000;
+}
+
+#d3{
+    background: #a14666;
+    color: aliceblue;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 12px;   
+    box-shadow: 5px 5px 2px var(--shadow);
+    border: 2px solid #cb8fac;
+    margin: auto;
+}
+
+#d3:hover{
+    transform:perspective(20deg);
+    border: #f5bacf solid 2px;
+    color: #ccf4e3;
+}
+
+#d4{
+    background: #6f4654;
+    color: aliceblue;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 12px;   
+    box-shadow: 5px 5px 2px var(--shadow);
+    border: 2px solid #e3a3c2;
+    position: fixed;
+
+    /* animação config*/
+    animation: animacao 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+img{
+    width: 250px;
+    border-radius: 12px;
+    border: solid 10px #fff;
+    border-bottom: solid 50px #fff;
+
+    animation: animacao 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+    from {box-shadow: 10px 10px 10px #cb8fac;}
+    to {box-shadow: 10px 10px 10px #7450a0;}
+}
+
